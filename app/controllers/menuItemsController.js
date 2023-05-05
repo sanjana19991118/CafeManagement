@@ -39,4 +39,21 @@ menuItemsController.create = (req,res) => {
         })
  }
 
+  menuItemsController.toggle = (req,res) => { // search 
+    //  const body = req.body
+    //  console.log(req.body)
+    //localhost:3058/api/menuItems/toggle
+     const { type } = req.query
+     console.log(type)
+     MenuItems.find({ 'type' : { $regex : type , $options: "i"}})
+        .then((menu) => {
+            console.log(menu)
+            res.json(menu)
+        })
+        .catch((err) => {
+            res.json(err)
+        })
+ }
+
+
 module.exports = menuItemsController

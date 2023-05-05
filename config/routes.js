@@ -11,6 +11,9 @@ router.post('/api/menuItems', menuItemsController.create)
 //search
 router.get('/api/menuItems/search', menuItemsController.show)
 
+// toggle drink / food 
+router.get('/api/menuItems/toggle', menuItemsController.toggle)
+
 //order
 router.get('/api/order', orderController.list)
 router.post('/api/order', orderController.create)
