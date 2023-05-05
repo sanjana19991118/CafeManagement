@@ -1,0 +1,32 @@
+input[type="radio"] {
+   color: green;
+}
+
+.Radio {
+   width: 50%;
+}
+
+.radio-child {
+   float: left;
+   width: 50%;
+}
+
+.toggle {
+    display: inline-block;
+}
+
+.toggle label {
+    display: block;
+}
+
+label {
+  color: rgb(6, 75, 3);
+}
+.radio1{
+   float: left;
+   margin-left: 30%;
+   
+}
+.radio2{
+   margin-left: 50%;
+}
